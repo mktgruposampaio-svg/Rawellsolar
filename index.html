@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
@@ -11,11 +11,11 @@
   <style>
     :root{
       --card-radius: 14px;
-      --label: #ffffff;
+      --label: #111; /* cor do texto do label em preto */
       --input-bg: #ffffff;
       --input-text: #222;
       --placeholder: #9aa3a7;
-      --stroke: rgba(255,255,255,.25);
+      --stroke: rgba(0,0,0,.15);
       --button: #ffd200;
       --button-text: #1a1a1a;
       --focus: #30b3a4;
@@ -25,8 +25,8 @@
 
     body{
       margin:0;
-      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #101112;
+      font-family: "Poppins", system-ui, sans-serif;
+      background: transparent; /* 🔹 fundo transparente */
       display:flex;
       align-items:center;
       justify-content:center;
@@ -40,24 +40,25 @@
       border-radius: var(--card-radius);
       background: transparent;
       padding: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.15);
+      box-shadow: 0 8px 24px rgba(0,0,0,.1);
     }
 
     .field{ margin-bottom: 10px; }
 
     label{
       display:block;
-      font-size: 12px;
+      font-size: 13px;
       color: var(--label);
       margin-bottom: 4px;
       letter-spacing: .2px;
+      font-weight: 500;
     }
 
     input, select, button{
       width:100%;
       height:49px;
       border-radius: 6px;
-      border: 1px solid rgba(0,0,0,.08);
+      border: 1px solid rgba(0,0,0,.15);
       outline: none;
       font-size: 14px;
       transition: box-shadow .2s ease, border-color .2s ease;
@@ -144,7 +145,7 @@
 
     <!-- Config extra -->
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://seuusuario.github.io/formulario-energia/sucesso.html">
+    <input type="hidden" name="_next" value="https://mktgruposampaio-svg.github.io/Rawellsolar/sucesso.html">
 
     <button type="submit">Enviar</button>
   </form>
